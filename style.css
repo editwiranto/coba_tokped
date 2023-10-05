@@ -109,6 +109,12 @@ a{
     justify-content: space-between;
     color: var(--NN950,#212121);
 }
+.kategori div{
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    top:75;
+}
 .kategori a{
     border-radius: 5px;
     padding: 10px;
@@ -126,11 +132,105 @@ a{
     right: 0;
     top: 90;
     position: absolute;
-    background-color: green;
+    /* background-color: green; */
     display: none;
 }
+.title{
+    width: 900%;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
 
-
+.title img{
+    width: 32px;
+    height: 32px;
+}
+.title .it-belanja{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.title label{
+    margin-left: 8px;
+}
+.title  h1{
+padding: 10px;
+}
+.title .list{
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.title .it-featured .it-ls-featured{
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.item-list{
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.title .item{
+    box-sizing: border-box;
+    padding: 8px;
+    width: 20%;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+.dd-navigation a{
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 50px;
+    margin: 30px;
+    color: black;
+}
+.dd-navigation a:hover{
+    color: #00AA5B;
+}
+.dd-navigation{
+    border-bottom: 1px solid #f0f3f7;
+}
+#belanja:target ~ .title{
+    margin-left: 0;
+}
+#featured:target ~ .title{
+    margin-left: -100%;
+}
+#tagihan:target ~ .title{
+    margin-left: -200%;
+}
+#topup:target ~ .title{
+    margin-left: -300%;
+}
+#keuangan:target ~ .title{
+    margin-left: -400%;
+}
+#pajakpendidikan:target ~ .title{
+    margin-left: -500%;
+}
+#travelentertainment:target ~ .title{
+    margin-left: -600%;
+}
+#halalcorner:target ~ .title{
+    margin-left: -700%;
+}
+#lainlain:target ~ .title{
+    margin-left: -800%;
+}
 .cari{
     display: flex;
     outline:  #BFC9D9 solid 1px;

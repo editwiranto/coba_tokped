@@ -127,6 +127,7 @@ a{
     display: block;
 }
 .header-tengah .dropdown-content{
+
     width: 100%;
     height: 500px;
     right: 0;
@@ -147,10 +148,45 @@ a{
     height: 32px;
 }
 .title .it-belanja{
-    background-color: black;
+    position: relative;
+    background-color: grey;
     width: 100%;
     height: 100%;
 }
+.rumahtangga{
+    width: 20%;
+}
+.menu-dropside-rumahtangga,.menu-dropside-akel{
+    cursor: pointer;
+    display: flex;
+}
+
+.dropside-rumahtangga,.dropside-akel{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+.menu-dropside-rumahtangga:hover > .dropside-rumahtangga{
+    display: block;
+}
+.dropside-akel{
+    display: none;
+}
+
+.menu-dropside-akel:hover > .dropside-akel{
+    display: block;
+}
+.dropside-akel{
+    display: none;
+}
+
+
+
+
 .title label{
     margin-left: 8px;
 }

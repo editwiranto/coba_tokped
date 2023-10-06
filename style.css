@@ -158,7 +158,6 @@ a{
 padding: 10px;
 }
 .title .list{
-    background-color: green;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
